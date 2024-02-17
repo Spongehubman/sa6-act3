@@ -2,15 +2,15 @@
 
 def find_maximum(l, lam):
     
-    max = -1
+    max = l[0]
 
     # Lets assume the length of the list l is > 1. Then...
 
     for i in range(len(l) - 1):
-        greater = lam(l[i], l[(i + 1)])
+        max = lam(max, l[(i)])
 
-        if greater > max:
-            max = greater
+        #if greater > max:
+        #    max = greater
 
     return max
 

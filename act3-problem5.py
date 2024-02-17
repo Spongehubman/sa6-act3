@@ -3,7 +3,7 @@ numbers = [1, 2, 3, 4, 5]
 
 # Some help for this code was taken from the W3Schools.com webpage
 # titled "Python Lambda" (the source is below.)
-power_list = list(map(lambda n: x ** n, numbers))
+power_list = list(map(lambda x: x ** n, numbers))
 
 print(power_list(2))
 

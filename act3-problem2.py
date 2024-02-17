@@ -1,13 +1,11 @@
 
 
-string_list = [('cat', 3), ('grasshopper', 11), ('bash', 4), ('stash', 5), ('aardvark', 8),
-                ('cs3', 3), ('archer', 6), ('ton', 3), ('goose', 5), ('shell', 5),
-                ('arctic', 6), ('penguin', 7)]
+string_list = ['cat', 'grasshopper', 'bash', 'stash', 'aardvark',
+                'cs3', 'archer', 'ton', 'goose', 'shell',
+                'arctic', 'penguin']
 
 
-#string_list.sort(key=lambda x, y: if x[1] == y[1] else x[0])
-
-string_list.sort(key=lambda x: x[0])
-string_list.sort(key=lambda x: x[1])
+string_list.sort(key=lambda x: x)
+string_list.sort(key=lambda x: len(x))
 
 print(string_list)
